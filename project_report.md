@@ -4,6 +4,8 @@
 
 **关键词：** 手势识别；MediaPipe；无接触控制；电梯系统；计算机视觉
 
+**项目仓库：** https://github.com/magiclab2233/gesture4lift
+
 ---
 
 ## 一、引言
@@ -207,7 +209,7 @@ $$t_{smooth} = t^2 \times (3 - 2t)$$
 
 ### （二）项目文件清单
 
-本项目共包含 8 个 Python 源文件、1 个机器学习模型文件和 1 份依赖说明，如表 5.1 所示。
+本项目共包含 8 个 Python 源文件、1 个机器学习模型文件、1 份项目报告和 1 份依赖说明，完整代码与文档已托管于 GitHub（https://github.com/magiclab2233/gesture4lift），如表 5.1 所示。
 
 **表 5.1 项目文件清单**
 
@@ -221,7 +223,9 @@ $$t_{smooth} = t^2 \times (3 - 2t)$$
 | config.py | 全局配置参数 |
 | data_collector.py | 手势数据采集工具 |
 | requirements.txt | Python 依赖列表 |
-| hand_landmarker.task | MediaPipe 手部检测模型（~7.8MB）|
+| hand_landmarker.task | MediaPipe 手部检测模型（~7.8 MB）|
+| project_report.md | 项目报告（完整文档）|
+| .gitignore | Git 版本控制忽略规则 |
 
 ---
 
@@ -235,6 +239,7 @@ $$t_{smooth} = t^2 \times (3 - 2t)$$
 2. **基于真实数据的阈值校准**：自主开发数据采集工具，采集 401 条样本进行统计分析，将阈值从经验猜测提升到数据驱动；
 3. **电梯移动动画与中文 HUD**：在纯软件层面实现了媲美商用电梯的交互反馈，降低了部署成本；
 4. **全模块化架构**：手势识别、状态控制、动画渲染、界面显示各模块解耦，便于后续扩展。
+5. **开源托管**：项目完整代码与文档已上传至 GitHub（https://github.com/magiclab2233/gesture4lift），便于复现与二次开发。
 
 ### （二）不足与展望
 
