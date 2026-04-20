@@ -19,3 +19,4 @@ dataset/
 *.mp4
 *.avi
 *.pdf
+!project_report.pdf
